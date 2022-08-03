@@ -1,0 +1,15 @@
+POST http://localhost:3003/confirm
+Content-Type: application/json
+
+{
+    "name": "Rodrigo",
+    "level": "0",
+    "email": "rodrigo@gmail.com",
+    "linkedin": "linkedin/rodrigo",
+    "github": "github/rodrigo"
+}
+
+#######
+
+GET http://localhost:3003/confirm
+Content-Type: application/json
