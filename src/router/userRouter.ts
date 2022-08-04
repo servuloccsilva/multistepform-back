@@ -14,4 +14,4 @@ const userBusiness = new UserBusiness(
 const userController = new UserController(userBusiness);
 
 userRouter.post("/confirm", userController.createUser);
-userRouter.get("/confirm", userController.getUsers);
+userRouter.get("/candidate", userController.getUsers);

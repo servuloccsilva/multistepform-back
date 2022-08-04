@@ -3,6 +3,7 @@ import { BaseDatabase } from "./BaseDataBase";
 const TABLE_NAME = "MULTISTEPFORM";
 
 export default class UserData extends BaseDatabase {
+  
   public createUser = async (
     name: string,
     level: number,
@@ -30,7 +31,8 @@ export default class UserData extends BaseDatabase {
 
       const result = await this.getConnection()
       .select("*")
-      .from(TABLE_NAME);
+      .from(TABLE_NAME)
+      
 
       if(!result[0]){
         throw new Error("Sem usuários registrados");
@@ -42,4 +44,5 @@ export default class UserData extends BaseDatabase {
       throw new Error(error.sqlMessage || error.message);
     }
   };
+
 }

@@ -44,4 +44,5 @@ export class UserController {
     }
     await BaseDatabase.destroyConnection();
   };
+  
 }
